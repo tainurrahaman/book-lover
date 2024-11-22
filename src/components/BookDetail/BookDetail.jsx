@@ -20,15 +20,15 @@ const BookDetail = () => {
   } = book;
 
   return (
-    <div className="grid grid-cols-2  bg-base-200 justify-center items-center my-10 rounded-2xl gap-12">
-      <div className="bg-[#21262b] py-14 rounded-2xl flex justify-center">
+    <div className="flex flex-col md:flex-row bg-base-200 justify-center items-center my-10 rounded-2xl md:gap-6 lg:gap-12">
+      <div className="bg-[#21262b]  rounded-2xl flex justify-center">
         <img
           src={image}
-          className="rounded-lg shadow-2xl max-w-xs md:max-w-sm lg:max-w-lg h-[600px]"
+          className="rounded-lg shadow-2xl max-w-xs lg:max-w-lg h-[600px]"
         />
       </div>
-      <div className="flex flex-col items-start h-full">
-        <h1 className="text-4xl font-bold my-4">{bookName}</h1>
+      <div className="flex flex-col items-start h-full p-8 md:p-0">
+        <h1 className="text-3xl lg:text-4xl font-bold my-4">{bookName}</h1>
         <p className="text-[20px] font-medium mb-6">By :{author}</p>
         <p className="text-[20px] font-medium mb-5">{category}</p>
         <hr />
