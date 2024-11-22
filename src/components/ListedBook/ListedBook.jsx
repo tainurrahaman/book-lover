@@ -14,7 +14,6 @@ const ListedBook = ({ book }) => {
     category,
     rating,
   } = book;
-  console.log(book);
 
   return (
     <div className="flex border-blue-900 rounded-2xl border-2 p-6 my-8 gap-6">
