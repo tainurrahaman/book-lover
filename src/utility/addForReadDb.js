@@ -11,7 +11,7 @@ const getReadStoreList = () => {
 const addToStoreReadList = (id) => {
   const storeList = getReadStoreList();
   if (storeList.includes(id)) {
-    console.log("already exists", id);
+    return;
   } else {
     storeList.push(id);
     const storeListStr = JSON.stringify(storeList);
@@ -19,4 +19,4 @@ const addToStoreReadList = (id) => {
   }
 };
 
-export { addToStoreReadList };
+export { addToStoreReadList, getReadStoreList };
